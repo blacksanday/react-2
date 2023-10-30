@@ -70,9 +70,9 @@ export default function App() {
         </div>
         {showStory && (
           <p>
-            It was {ukusRef.current == "us" ? 94 : Math.round(convertCelsius(94))}{ukus === "us" ? " fahrenheit" : "centigrade"} outside, so {xItem} went for a walk. When they
+            It was {ukusRef.current == "us" ? 94 : Math.round(convertCelsius(94))}{ukusRef.current  === "us" ? " fahrenheit" : "centigrade"} outside, so {xItem} went for a walk. When they
             got to {yItem}, they stared in horror for a few moments, then {zItem}.
-            {name} saw the whole thing, but was not surprised — {xItem} weighs {ukus === "us" ? 300 : Math.round(convertStone(300))}
+            {name} saw the whole thing, but was not surprised — {xItem} weighs {ukusRef.current === "us" ? 300 : Math.round(convertStone(300))}
             {ukusRef.current === "us" ? "pounds" : "stone"}, and it was a hot day.
           </p>
         )}
